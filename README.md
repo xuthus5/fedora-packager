@@ -28,6 +28,14 @@ sudo dnf install fedora-deepin-wine5 fedora-deepin-wine-helper -y
 sudo dnf install fedora-deepin-wework fedora-deepin-wechat -y
 ```
 
+## 目前维护的软件列表
+
+| 包名                   | 描述   | 版本       |
+| -------------------- | ---- | -------- |
+| fedora-deepin-wechat | 微信   | 3.4.0.38 |
+| fedora-deepin-wework | 企业微信 | 3.1.12.2 |
+| fedora-deepin-qq     | QQ   | 9.3.2.20 |
+
 ### 修复字体方块问题
 
 下载 微软雅黑 字体 放置到 `~/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts/` 下
