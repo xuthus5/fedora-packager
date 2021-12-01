@@ -35,6 +35,7 @@ sudo dnf install fedora-deepin-wework fedora-deepin-wechat -y
 | fedora-deepin-wechat | 微信   | 3.4.0.38 |
 | fedora-deepin-wework | 企业微信 | 3.1.12.2 |
 | fedora-deepin-qq     | QQ   | 9.3.2.20 |
+| fedora-deepin-tim    | TIM  | 3.3.5.3  |
 
 ### 修复字体方块问题
 
