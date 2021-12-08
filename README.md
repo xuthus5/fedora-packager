@@ -1,6 +1,6 @@
 # fedora-packager
 
-> 目前维护了 fedora 下的 wechat, wxwork, deepin-wine5, deepin-wine-helper
+> 目前维护了 fedora 下的 wechat, wxwork, deepin-wine5, deepin-wine-helper 等.
 
 ## 添加软件源
 
@@ -39,6 +39,7 @@ sudo dnf install fedora-deepin-wework fedora-deepin-wechat -y
 | fedora-deepin-189cloud | 天翼云盘   | 6.3.8.1   |
 | fedora-deepin-iqiyi    | 爱奇艺    | 7.6.114.2 |
 | fedora-deepin-pvz      | 植物大战僵尸 | 1.0.0.1   |
+| fedora-deepin-kugou    | 酷狗音乐   | 9.1.44.1  |
 
 ### 修复字体方块问题
 
