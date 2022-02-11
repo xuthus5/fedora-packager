@@ -110,9 +110,11 @@ WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine5 regedit ~/.deepinwine/Deepi
 
 下载一份额外的依赖包(该包提供低版本的 deepin-wine6 依赖库)
 
+https://software.opensuse.org//download.html?project=home%3Axuthus5&package=fedora-deepin-extra-lib
+
 ```bash
 # 忽略冲突
-sudo rpm -ivh --force https://download.opensuse.org/repositories/home:/xuthus5/Fedora_$(rpm -E %fedora)/x86_64/fedora-deepin-extra-lib-0.0.1.2.x86_64.rpm
+sudo rpm -ivh --force fedora-deepin-extra-lib-0.0.1.2-1.x86_64.rpm
 
 # 必须按照如下步骤进行软链接
 sudo ln -sf liblber-2.4.so.2.10.10 liblber-2.4.so.2
