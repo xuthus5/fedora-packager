@@ -114,9 +114,10 @@ https://software.opensuse.org//download.html?project=home%3Axuthus5&package=fedo
 
 ```bash
 # 忽略冲突
-sudo rpm -ivh --force fedora-deepin-extra-lib-0.0.1.2-1.x86_64.rpm
+sudo rpm -ivh --force fedora-deepin-extra-lib-0.0.1-2.1.x86_64.rpm
 
 # 必须按照如下步骤进行软链接
+cd /usr/lib/
 sudo ln -sf liblber-2.4.so.2.10.10 liblber-2.4.so.2
 sudo ln -sf libldap_r-2.4.so.2.10.10 libldap_r-2.4.so.2
 sudo ln -sf libldap_r-2.4.so.2 libldap-2.4.so.2
