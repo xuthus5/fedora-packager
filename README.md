@@ -45,7 +45,7 @@ sudo dnf install feodra-deepin-wechat -y
 | fedora-deepin-wine5    | deepin-wine5 | -                    | 是       | -        |
 | fedora-deepin-wine6    | deepin-wine6 | -                    | -       | 是        |
 | fedora-deepin-wechat   | 微信           | w5:3.4.0.38/w6:3.5.0 | 是       | 是        |
-| fedora-deepin-wework   | 企业微信         | 3.1.12.2             | 是       | 否        |
+| fedora-deepin-wework   | 企业微信         | 3.1.12.2             | 是       | 是        |
 | fedora-deepin-qq       | QQ           | 9.3.2.20             | 是       | 否        |
 | fedora-deepin-tim      | TIM          | 3.3.5.3              | 是       | 否        |
 | fedora-deepin-189cloud | 天翼云盘         | 6.3.8.1              | 是       | 否        |
