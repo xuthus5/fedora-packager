@@ -29,15 +29,6 @@ sudo dnf install fedora-deepin-wine5 fedora-deepin-wine-helper -y
 sudo dnf install fedora-deepin-wine6 fedora-deepin-wine-helper -y
 ```
 
-## 安装微信和企业微信
-
-- `fedora-deepin-wework` 企业微信包名
-- `fedora-deepin-wechat` 微信包名
-
-```bash
-sudo dnf install fedora-deepin-wework fedora-deepin-wechat -y
-```
-
 ## 目前维护的软件列表
 
 > 需要注意的是，以下列表中的包名是使用 fedora-deepin-wine5 驱动的，当兼容 wine6+ 时，你可以使用 `包名-wine6` 进行软件安装。列表中 w5标识wine5版本号，w6标识wine6+版本号
@@ -45,6 +36,8 @@ sudo dnf install fedora-deepin-wework fedora-deepin-wechat -y
 ```bash
 # 安装 fedora-deepin-wine6 版本的微信
 sudo dnf install feodra-deepin-wechat-wine6 -y
+# 安装 fedora-deepin-wine5 版本的微信
+sudo dnf install feodra-deepin-wechat -y
 ```
 
 | 包名                     | 描述           | 版本                   | 兼容wine5 | 兼容wine6+ |
