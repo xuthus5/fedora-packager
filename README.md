@@ -106,19 +106,33 @@ WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine5 regedit ~/.deepinwine/Deepi
 https://software.opensuse.org//download.html?project=home%3Axuthus5&package=fedora-deepin-extra-lib
 
 ```bash
-# 忽略冲突
+# 忽略冲突安装
 sudo rpm -ivh --force fedora-deepin-extra-lib-0.0.1-2.1.x86_64.rpm
+# 你也可以直接线上安装
+sudo rpm -ivh --force https://download.opensuse.org/repositories/home:/xuthus5/Fedora_$(rpm -E %fedora)/x86_64/fedora-deepin-extra-lib-0.0.1-4.1.x86_64.rpm
 
 # 必须按照如下步骤进行软链接
 cd /usr/lib/
 sudo ln -sf liblber-2.4.so.2.10.10 liblber-2.4.so.2
 sudo ln -sf libldap_r-2.4.so.2.10.10 libldap_r-2.4.so.2
 sudo ln -sf libldap_r-2.4.so.2 libldap-2.4.so.2
-# 替换 deepin-wine6-stable 的 wldap32.dll.so
-sudo cp /usr/lib/lowversion-wldap32.dll.so /opt/deepin-wine6-stable/lib/wldap32.dll.so
 ```
 
 接下来你可以执行 `/opt/apps/com.qq.weixin.deepin/files/run.sh` 重启微信。
+
+### 我无法运行软件 也无法拿到运行日志？
+
+wine提供 `WINEDEBUG` 环境变量可供你在运行时获取不同通道`channel`的日志信息。
+你只需要在你需要运行的软件前 添加 `WINEDEBUG=${log_level}+${channel}` 即可。
+详见：[WineHQ:Debug Channels](https://wiki.winehq.org/Debug_Channels)
+
+举一个例子：
+
+```bash
+# 打印微信运行时所有通道的error级别信息
+# will turn on WARN messages for all channels, in addition to already enabled ERR and FIXME messages.
+WINEDEBUG=warn+all /opt/apps/com.qq.weixin.deepin/files/run.sh
+```
 
 ## 如何打包
 
