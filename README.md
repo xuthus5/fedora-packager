@@ -134,6 +134,14 @@ wine提供 `WINEDEBUG` 环境变量可供你在运行时获取不同通道`chann
 WINEDEBUG=warn+all /opt/apps/com.qq.weixin.deepin/files/run.sh
 ```
 
+### 提示 wldap32.dll not found
+
+```bsh
+# 自行下载wine旧版本的wldap32.dll.so 
+wget https://images.xuthus.cc/images/akrHXou_wldap32.dll.so
+sudo mv akrHXou_wldap32.dll.so /opt/deepin-wine6-stable/lib/wldap32.dll.so
+```
+
 ## 如何打包
 
 参考我的此篇文章: [fedora 打包 wechat RPM 包](https://xuthus.cc/linux/fedora-packaged-wechat-rpm.html)
