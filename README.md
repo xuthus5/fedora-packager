@@ -35,9 +35,9 @@ sudo dnf install fedora-deepin-wine6 fedora-deepin-wine-helper -y
 
 ```bash
 # 安装 fedora-deepin-wine6 版本的微信
-sudo dnf install feodra-deepin-wechat-wine6 -y
+sudo dnf install fedora-deepin-wechat-wine6 -y
 # 安装 fedora-deepin-wine5 版本的微信
-sudo dnf install feodra-deepin-wechat -y
+sudo dnf install fedora-deepin-wechat -y
 ```
 
 | 包名                     | 描述           | 版本                   | 兼容wine5 | 兼容wine6+ |
