@@ -65,6 +65,21 @@ fedora35+上对 `libpcap` 以及 `openldap` 进行了更新，导致无法对原
 
 ### 修复字体方块问题
 
+#### 方法一
+
+最简单的方法是下载一份已经处理好了的微软雅黑+宋体融合字体
+
+```bash
+wget https://images.xuthus.cc/images/fake_simsun.ttc
+cp fake_simsun.ttc ~/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts/
+# 微信重启之
+/opt/apps/com.qq.weixin.deepin/files/run.sh
+```
+
+#### 方法二
+
+自定义需要配置的字体
+
 下载 微软雅黑 字体 放置到 `~/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts/` 下
 
 ```bash
@@ -92,6 +107,8 @@ REGEDIT4
 "Arial"="msyh.ttc"
 "Arial Black"="msyh.ttc"
 ```
+
+注册表注册之
 
 ```bash
 WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine5 regedit ~/.deepinwine/Deepin-WeChat/system.reg
