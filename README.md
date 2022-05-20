@@ -126,7 +126,7 @@ https://software.opensuse.org//download.html?project=home%3Axuthus5&package=fedo
 # 忽略冲突安装
 sudo rpm -ivh --force fedora-deepin-extra-lib-0.0.1-2.1.x86_64.rpm
 # 你也可以直接线上安装
-sudo rpm -ivh --force https://download.opensuse.org/repositories/home:/xuthus5/Fedora_$(rpm -E %fedora)/x86_64/fedora-deepin-extra-lib-0.0.1-4.1.x86_64.rpm
+sudo rpm -ivh --force https://download.opensuse.org/repositories/home:/xuthus5/Fedora_$(rpm -E %fedora)/x86_64/fedora-deepin-extra-lib-0.0.1-7.1.x86_64.rpm
 
 # 必须按照如下步骤进行软链接
 cd /usr/lib/
