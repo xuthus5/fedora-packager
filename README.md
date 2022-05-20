@@ -135,8 +135,8 @@ sudo ln -sf libldap_r-2.4.so.2.10.10 libldap_r-2.4.so.2
 sudo ln -sf libldap_r-2.4.so.2 libldap-2.4.so.2
 
 # 下载wine旧版本的wldap32.dll.so
-wget https://images.xuthus.cc/images/akrHXou_wldap32.dll.so
-sudo mv akrHXou_wldap32.dll.so /opt/deepin-wine6-stable/lib/wldap32.dll.so
+wget -O wldap32.dll.so https://images.xuthus.cc/images/akrHXou_wldap32.dll.so
+sudo mv wldap32.dll.so /opt/deepin-wine6-stable/lib/wldap32.dll.so
 ```
 
 接下来你可以执行 `/opt/apps/com.qq.weixin.deepin/files/run.sh` 重启微信。
