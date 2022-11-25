@@ -8,22 +8,16 @@
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:xuthus5/Fedora_$(rpm -E %fedora)/home:xuthus5.repo
 ```
 
-## 安装前置软件
+## 安装软件
 
-**注**: 目前 `deepin-wine` 有经典 `deepin-wine5` 和 `deepin-wine6-stable` 两者互不兼容。 使用时，如果你的Fedora版本小于 `<35` 请安装使用 `fedora-deepin-wine5`，否则请安装 `fedora-deepin-wine6`
+**注**: 目前不再维护 `Fedora release version < 35` 的版本.
 
-> `fedora-deepin-wine5|fedora-deepin-wine6` 和 `fedora-deepin-wine-helper` 是必装的依赖
+> `fedora-deepin-wine6` 和 `fedora-deepin-wine-helper` 是必装的依赖
 
-- `fedora-deepin-wine5|fedora-deepin-wine6` 用于驱动原生 `wine`
+- `fedora-deepin-wine6` 用于驱动原生 `wine`
 - `fedora-deepin-wine-helper` 用于驱动打包好的程序。
 
-### fedora 版本小于 35
-
-```bash
-sudo dnf install fedora-deepin-wine5 fedora-deepin-wine-helper -y
-```
-
-### fedora 版本大于等于 35
+### 前置以来版本安装
 
 ```bash
 sudo dnf install fedora-deepin-wine6 fedora-deepin-wine-helper -y
@@ -31,20 +25,15 @@ sudo dnf install fedora-deepin-wine6 fedora-deepin-wine-helper -y
 
 ## 目前维护的软件列表
 
-> 需要注意的是，以下列表中的包名是使用 fedora-deepin-wine5 驱动的，当兼容 wine6+ 时，你可以使用 `包名-wine6` 进行软件安装。列表中 w5标识wine5版本号，w6标识wine6+版本号
-
 ```bash
 # 安装 fedora-deepin-wine6 版本的微信
 sudo dnf install fedora-deepin-wechat-wine6 -y
-# 安装 fedora-deepin-wine5 版本的微信
-sudo dnf install fedora-deepin-wechat -y
 ```
 
 | 包名                     | 描述           | 版本                   | 兼容wine5 | 兼容wine6+ |
 | ---------------------- | ------------ | -------------------- | ------- | -------- |
-| fedora-deepin-wine5    | deepin-wine5 | -                    | 是       | -        |
-| fedora-deepin-wine6    | deepin-wine6 | -                    | -       | 是        |
-| fedora-deepin-wechat   | 微信           | w5:3.4.0.38/w6:3.7.6 | 是       | 是        |
+| fedora-deepin-wine6    | deepin-wine6 | -                    | 是       | 是        |
+| fedora-deepin-wechat   | 微信           | 3.7.6 | 是       | 是        |
 | fedora-deepin-wework   | 企业微信         | 3.1.12.2             | 是       | 是        |
 | fedora-deepin-qq       | QQ           | 9.3.2.20             | 是       | 否        |
 | fedora-deepin-tim      | TIM          | 3.3.5.3              | 是       | 否        |
