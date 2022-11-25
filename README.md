@@ -1,6 +1,6 @@
 # fedora-packager
 
-> 目前维护了 fedora 下的 wechat, wxwork, deepin-wine5, deepin-wine6-stable, deepin-wine-helper 等.
+> 目前维护了 fedora 下的 wechat, wxwork, deepin-wine6-stable, deepin-wine-helper 等.
 
 ## 添加软件源
 
