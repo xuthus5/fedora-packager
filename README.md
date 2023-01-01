@@ -33,7 +33,7 @@ sudo dnf install fedora-deepin-wechat-wine6 -y
 | 包名                     | 描述           | 版本                   | 兼容wine5 | 兼容wine6+ |
 | ---------------------- | ------------ | -------------------- | ------- | -------- |
 | fedora-deepin-wine6    | deepin-wine6 | -                    | 是       | 是        |
-| fedora-deepin-wechat   | 微信           | 3.7.6 | 是       | 是        |
+| fedora-deepin-wechat-wine6   | 微信           | 3.8.0 | 是       | 是        |
 | fedora-deepin-wework   | 企业微信         | 3.1.12.2             | 是       | 是        |
 | fedora-deepin-189cloud | 天翼云盘         | 6.3.8.1              | 是       | 否        |
 | fedora-deepin-iqiyi    | 爱奇艺          | 7.6.114.2            | 是       | 否        |
