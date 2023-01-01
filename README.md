@@ -35,8 +35,6 @@ sudo dnf install fedora-deepin-wechat-wine6 -y
 | fedora-deepin-wine6    | deepin-wine6 | -                    | 是       | 是        |
 | fedora-deepin-wechat   | 微信           | 3.7.6 | 是       | 是        |
 | fedora-deepin-wework   | 企业微信         | 3.1.12.2             | 是       | 是        |
-| fedora-deepin-qq       | QQ           | 9.3.2.20             | 是       | 否        |
-| fedora-deepin-tim      | TIM          | 3.3.5.3              | 是       | 否        |
 | fedora-deepin-189cloud | 天翼云盘         | 6.3.8.1              | 是       | 否        |
 | fedora-deepin-iqiyi    | 爱奇艺          | 7.6.114.2            | 是       | 否        |
 | fedora-deepin-pvz      | 植物大战僵尸       | 1.0.0.1              | 是       | 否        |
