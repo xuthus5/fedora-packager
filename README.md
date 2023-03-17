@@ -8,7 +8,7 @@
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:xuthus5/Fedora_$(rpm -E %fedora)/home:xuthus5.repo
 ```
 
-## 安装软件
+## 安装说明
 
 **注**: 目前不再维护 `Fedora release version < 35` 的版本.
 
@@ -17,7 +17,7 @@ sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/ho
 - `fedora-deepin-wine6` 用于驱动原生 `wine`
 - `fedora-deepin-wine-helper` 用于驱动打包好的程序。
 
-### 前置以来版本安装
+### 安装依赖
 
 ```bash
 sudo dnf install fedora-deepin-wine6 fedora-deepin-wine-helper -y
